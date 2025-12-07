@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de Edad</title>
+    <link rel="stylesheet" href="edad.css">
 </head>
 <body>
+    <div class="fondo"></div>
     
+    <div class="contenedor">
+        <header>
+            <h1>Calculadora de Edad</h1>
+
+        </header>
+        
+        <main class="contenido">
+            <div class="resultado">
+                <p class="saludo" id="saludo">¡Hola!</p>
+                <p class="edad" id="edad">Ingresa tus datos</p>
+            </div>
+            
+            <div class="datos">
+                <p><strong>Nombre:</strong> <span id="nombre-usuario">---</span></p>
+                <p><strong>Año de nacimiento:</strong> <span id="ano-nacimiento">---</span></p>
+            </div>
+            
+            <div class="botones">
+                <button onclick="pedirDatos()" class="btn">Ingresar Datos</button>
+                <button onclick="reiniciar()" class="btn btn-secundario">Reiniciar</button>
+            </div>
+        </main>
+        
+       
+    </div>
+
+    <script src="edad.js"></script>
 </body>
 </html>
